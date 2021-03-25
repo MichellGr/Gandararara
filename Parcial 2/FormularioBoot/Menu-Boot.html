@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <meta charset="utf-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>Menu Bootstrap</title>
+
+       <link rel="shortcut icon" href="https://i.pinimg.com/originals/ee/b8/f7/eeb8f7cae4412a6ec3703bd6c7c2efb8.png" type="image/x-icon">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+      </head>
+<body>
+
+    <!-- Barra de navegacion-->
+    <nav class="navbar navbar-expand-lg" style="background-color: #f12b2b;">
+        
+        
+        <a class="navbar-brand text-white" href="#">
+            <img src="https://sites.google.com/site/pacospizzanuevolaredo/_/rsrc/1472765394855/config/paco%2Cs%20pizza.JPG" width="40" height="40" class="d-inline-block align-top" alt="">
+            Paco's Pizza (867 - 717 - 5982)
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="#">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Galeria</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">Contacto</a>
+              </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2 text-white" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0 text-white" type="submit">Buscar</button>
+          </form>
+        </div>
+      </nav>
+
+    <div class="container">
+    <form class="form">
+      
+        <br>
+      <div class="form-group">
+            <label for="NombreCliente" class="control-label">Nombre:</label>
+            <input id="NombreCliente" type="text" class="form-control" placeholder="Nombre del cliente"/>
+      <div>
+          <br>
+      <div class="form-group">
+            <label for="Direccion">Direccion:</label>
+            <input id="Direccion" type="text" class="form-control" placeholder="Direccion de entrega"/>
+      </div>
+      <div class="form-group">
+            <label for="telCliente">Telefono:</label>
+            <input id="telCliente" type="text" class="form-control" placeholder="(Lada)-Numero "/>
+      </div>
+      <div class="form-group">
+        <label for="Cantidad">Cantidad:</label>
+        <input id="Cantidad" type="text" class="form-control" placeholder="Cantidad de pizzas"/>
+      </div>
+
+      <div class="form-group"> <!-- Boton de tipos de pizza -->
+        <label for="state_id" class="control-label">Tipo de pizza:</label>
+        <select class="form-control" id="TipoPizza">
+            <option value="Pepperoni">Pepperoni</option>
+            <option value="Hawaiana">Hawaiana</option>
+            <option value="3Carnes">Tres carnes</option>
+            <option value="Suprema">Suprema</option>
+            <option value="Cube">Cube</option>
+        </select>                    
+    </div>
+
+<!-- Menu ?-->
+<img src="https://scontent.fntr6-1.fna.fbcdn.net/v/t1.15752-0/p480x480/151630721_768869203736828_7460587947398402284_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=ae9488&_nc_ohc=kzKmL4pVVegAX9Rl4QJ&_nc_ht=scontent.fntr6-1.fna&tp=6&oh=ef945a072cd2458526589887f995e15f&oe=6080D041" width="400" height="600" class="float-right" alt="Eniun">
+
+<br>
+
+    <!-- Pagar con tarjeta ?-->
+    <div class="checkbox" id="CheckBPago" >
+        <label>
+          <input type="checkbox"   class="text-muted"> Realizar pago con tarjeta. <a href="#"></a>
+        </label>
+      </div>
+      
+    <!-- Pagos con tarjeta -->
+   
+    <form action="#" class="credit-card-div">
+        <div>
+
+        <div class="panel panel-default" >
+         <div class="panel-heading">
+             
+              <div class="row ">
+                      <div class="col-md-12">
+                          <input type="text" class="form-control" placeholder="Ingrese el numero en la tarjeta" />
+                      </div>
+                  </div>
+             <div class="row "> <br>
+                      <div class="col-md-3 col-sm-3 col-xs-3">
+                          <span class="help-block text-muted small-font" > Mes de expiración </span>
+                          <input type="text" class="form-control" placeholder="MM" />
+                      </div>
+                 <div class="col-md-3 col-sm-3 col-xs-3">
+                          <span class="help-block text-muted small-font" >  Año de expiración </span>
+                          <input type="text" class="form-control" placeholder="YY" />
+                      </div>
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                          <span class="help-block text-muted small-font" >  CCV </span>
+                          <input type="text" class="form-control" placeholder="CCV" />
+                      </div>
+                 <div class="col-md-3 col-sm-3 col-xs-3">
+           <img src="https://image.flaticon.com/icons/png/512/61/61527.png" class="img-thumbnail" alt="Cinque Terre" width="60" height="60">
+                 </div>
+                  </div>
+             <div class="row ">
+                      <div class="col-md-12 pad-adjust">
+        
+                          <input type="text" class="form-control" placeholder="Nombre en la tarjeta" />
+                      </div>
+                  </div>
+                  <br>
+             <div class="row">
+        <div class="col-md-12 pad-adjust">
+            <div class="checkbox">
+            <label>
+              <input type="checkbox" class="text-muted"> Guardar datos para futuros pagos <a href="#"></a>
+            </label>
+          </div>
+        </div>
+             </div>
+               <div class="row ">
+                    
+                      <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
+                          <input type="submit"  class="btn btn-warning btn-block" value="Pagar ahora" />
+                      </div>
+                  </div>
+             
+                           </div>
+                      </div>
+        </form>
+     <br>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+      <button type="reset" class="btn btn-default">Cancelar</button>
+
+    </form>
+    <div>
+    
+   </div>
+
+</body>
+<html>
