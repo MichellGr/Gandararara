@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Validación del login</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="https://w7.pngwing.com/pngs/715/189/png-transparent-pizza-pizza-sticker-sticker-ink-food-sticker.png" type="image/x-icon">
+</head>
+<body>
+	<div class="container">
+		<h1 class="label">Login</h1>
+		<form class="login_form" action="home.html" method="post" name="form" onsubmit="return validated()">
+			
+			<div class="font">Usuario</div>
+			<input autocomplete="off" type="text" name="user">
+			<div id="user_error">Por favor, ingrese otro nombre de usuario</div>
+			
+			<div class="font font2">Contraseña</div>
+			<input type="password" name="password">
+			<div id="pass_error">Por favor, ingrese otra contraseña</div>
+
+			<button type="submit">Ingresar</button>
+
+			<div class="Nota-text">
+				Nota:
+				<br>
+				El largo del nombre de usuario debe tener 8 caracteres.
+				<br>
+				El largo de la contraseña debe tener 6 caracteres.
+			</div>
+		</form>
+	</div>	
+	<script src="valid.js"></script>
+</body>
+</html>
