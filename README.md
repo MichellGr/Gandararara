@@ -4,7 +4,8 @@
 Incluyendo actualmente los documentos de las siguientes unidades:
 
 - Parcial 1.
-- Paarcial 2.
+- Parcial 2.
+- Parcial 3.
 
 Gracias por visitarlo!.
 
