@@ -7,7 +7,7 @@ session_start();
 $_SESSION['Usuario'] = $Usuario;
 
 //conexion a la bd
-$Conexion=mysqli_connect("localhost", "root", "", "loginbd");
+$Conexion=mysqli_connect("localhost", "root", "", "logindb");
 $Consulta="SELECT * FROM Clientes WHERE Usuario='$Usuario' and Clave='$Clave'";
 $Resultado=mysqli_query($Conexion, $Consulta);
 
