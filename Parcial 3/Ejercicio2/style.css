@@ -1,3 +1,4 @@
+
 *
 {
     margin: 0;
@@ -13,10 +14,9 @@
     /*font-family: 'Roboto';*/
 }
 
-
 .container-table
 {
-    width: 98%;
+    width: 90%;
     background: white;
     margin: 50px auto;
 
@@ -28,7 +28,7 @@
 .table_title
 {
     grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-end: 6;
 
     background: tomato;
     color: white;

@@ -24,6 +24,8 @@ $clientes = "SELECT * FROM Clientes"
         <h1>Bienvenido al inicio!!</h1>
     </div>
 
+<body>           
+    
     <div class="container-table">
     <div class="table_title">Datos de los clientes del dia</div>
     <div class="table_header">Nombre</div>
@@ -33,19 +35,16 @@ $clientes = "SELECT * FROM Clientes"
     <div class="table_header">Total por pagar</div>
 
     <?php $resultado = mysqli_query($Conexion,$clientes);
-    while($row=mysqli_fetch_assoc($resultado)) 
-    { ?>
-    <div class="table_item"> <?php echo $row["Nombre"] ?> </div>
-    <div class="table_item"> <?php echo $row["Direccion"] ?> </div>
-    <div class="table_item"> <?php echo $row["Colonia"] ?> </div>
-    <div class="table_item"> <?php echo $row["Referencias"] ?></div>
-    <div class="table_item"> <?php echo $row["TotalPorPagar"] ?> </div>
-    <?php
-    } mysqli_free_result($resultado);?>
-    ?>
+    while($row=mysqli_fetch_assoc($resultado)) { ?>
 
-    </div>
-<body>
+    <div class="table_item"> <?php echo $row["Nombre"]; ?> </div>
+    <div class="table_item"> <?php echo $row["Direccion"]; ?> </div>
+    <div class="table_item"> <?php echo $row["Colonia"]; ?> </div>
+    <div class="table_item"> <?php echo $row["Referencias"]; ?></div>
+    <div class="table_item"> <?php echo $row["TotalPorPagar"]; ?> </div>
+
+    <?php } mysqli_free_result($resultado);?>
     
+    </div>
 </body>
 </html>
