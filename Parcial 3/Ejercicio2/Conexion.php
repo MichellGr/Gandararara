@@ -1,9 +1,10 @@
 <?php
 
 $DB='Gandararara';
+$server='localhost:3308';
 $user='root';
 $pass='';
-$server='localhost:3308';
+
 
 try
 {
