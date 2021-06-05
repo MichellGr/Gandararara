@@ -1,3 +1,10 @@
+<?php
+include("Conexion.php");
+$clientes = "SELECT * FROM Clientes" //OJO AQUI EMPIEZAN LOS CAMBIOS
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,26 +37,19 @@
     <div class="table_header">Total por pagar</div>
 
 
-    <?php
+    <?php 
 
-include "Conexion.php";
+    $resultado = mysqli_query($Conexion,$clientes);
+    while($row=mysqli_fetch_assoc($resultado)) { ?>
 
-    $consultaSelect="SELECT * FROM  Clientes";
-    $consulta=$conection->prepare($consultaSelect);
-    $consulta->execute();
-    
-    while($registro = $consulta->fetch())
-    {?>
-        <div class="table_item"> <?php echo $registro["Nombre"]; ?> </div>
-        <div class="table_item"> <?php echo $registro["Direccion"]; ?> </div>
-        <div class="table_item"> <?php echo $registro["Colonia"]; ?> </div>
-        <div class="table_item"> <?php echo $registro["Referencias"]; ?></div>
-        <div class="table_item"> <?php echo $registro["TotalPorPagar"]; ?> </div>
+    <div class="table_item"> <?php echo $row["Nombre"]; ?> </div>
+    <div class="table_item"> <?php echo $row["Direccion"]; ?> </div>
+    <div class="table_item"> <?php echo $row["Colonia"]; ?> </div>
+    <div class="table_item"> <?php echo $row["Referencias"]; ?></div>
+    <div class="table_item"> <?php echo $row["TotalPorPagar"]; ?> </div>
 
-    <?php
-    }
-     $consulta->closeCursor();?>
-
+        
+    <?php } mysqli_free_result($resultado);?>
  
     </div>
 </body>
