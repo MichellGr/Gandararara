@@ -1,7 +1,7 @@
 <?php
 
-$server='localhost:3308';
 $DB='Gandararara';
+$server='localhost:3308';
 $user='root';
 $pass='';
 

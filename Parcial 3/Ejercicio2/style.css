@@ -14,45 +14,13 @@
     /*font-family: 'Roboto';*/
 }
 
-.container-table
+h1
 {
-    width: 90%;
-    background: white;
-    margin: 50px auto;
-
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-auto-rows: 50px;
+	text-align: center;
+	margin-bottom: rgba(0, 0, 0, 0.781);
 }
 
-.table_title
-{
-    grid-column-start: 1;
-    grid-column-end: 6;
-
-    background: tomato;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.9em;
-}
-
-.table_header, .table_item
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.table_header
-{
-    font-weight: bold;
-    font-size: 1.5em;
-}
-
-.table_item
-{
-    padding: 10px;
-    font-size: 1.2em;
+body{
+    font-family: 'Roboto';
+    background-color: rgb(245, 239, 239);
 }
